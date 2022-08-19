@@ -1,0 +1,20 @@
+*,*:before,*:after {
+  box-sizing:border-box;
+}
+
+
+html, body {
+  
+  /* background-image: linear-gradient(90deg,#33b7e2,#5e62b0,#dc307c); */
+  /* background-image: linear-gradient(90deg, #17174A, #6E1CB6, #4F03E0) !important; */
+  /* background: radial-gradient(79.85% 56.11% at 69.93% 80.9%, #fe00fe33 0%, #f407f533 0.01%, rgba(36, 3, 66, 0.2) 100%) #240342; */
+
+  background: rgb(23, 23, 74);
+  background: linear-gradient(
+    180deg,
+    rgba(23, 23, 74, 1) 0%,
+    rgba(110, 28, 182, 1) 66%,
+    rgba(79, 3, 224, 1) 100%
+  );
+
+}

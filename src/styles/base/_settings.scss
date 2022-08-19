@@ -1,0 +1,32 @@
+//Color
+$color-primary:#8733FF;
+$color-secondary:#4F03E0;
+$color-action:#e83283;
+
+
+//Fonts
+$fonts-primary: 'Roboto', sans-serif;
+$fonts-secondary:'Raleway', sans-serif;
+
+
+$xxxxx-large:50px;
+$xxxx-large:45px;
+$xxx-large:40px;
+$xx-large:35px;
+$x-large:30px;
+$large:20px;
+$medium:16px;
+$small:14px;
+$x-small:12px;
+
+//Media Query
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 992px;
+
+
+$breakpoints: (
+  'small': (min-width: 576px),
+  'medium': (min-width: 768px),
+  'large': (min-width: 992px),
+  //'extra-large': (min-width: 1200px),
+);
