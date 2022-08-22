@@ -1,0 +1,87 @@
+.header__title {
+  font-size: 5rem;
+  &::first-letter {
+    color: $color-calypso;
+  }
+  & strong {
+    color: $color-calypso;
+  }
+}
+
+.header__icons {
+  grid-gap: 40px;
+}
+.mouse__container {
+  grid-gap: 20px;
+  text-decoration: none;
+}
+.mouse__scroll {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  font-family: $fonts-secondary;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+/* From uiverse.io by @mrhyddenn */
+.mouse-btn {
+  width: 40px;
+  height: 80px;
+  border: 3px solid rgba(122, 122, 124, 0.918);
+  border-radius: 20px;
+  display: flex;
+}
+
+.mouse-scroll {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(
+    170deg,
+    rgba(122, 122, 124, 0.918),
+    rgb(123, 124, 124)
+  );
+  border-radius: 50%;
+  margin: auto;
+  animation: scrolling13 1s linear infinite;
+}
+.header__bg {
+  background-image: url(https://www.formget.com/wp-content/uploads/2018/07/header-img.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  color: white;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+}
+
+@keyframes animation-bg {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
+@keyframes scrolling13 {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+}

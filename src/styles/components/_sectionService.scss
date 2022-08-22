@@ -1,0 +1,26 @@
+.service__rotate{
+    animation: rotation 8s infinite linear;
+    margin-bottom: 7rem;
+
+}
+.service__bg{
+    background-image: url(https://drive.google.com/file/d/1_I8slSo7kq4WHovaM4oLRx6nirNNdfF3/view?usp=sharing) no-repeat;
+}
+.service__title {
+    font-size: 4rem;
+}
+.service__description{
+    font-weight: 300;
+font-size: 20px;
+line-height: 30px;
+}
+
+
+@keyframes rotation {
+    from {
+        transform: rotate3d(0.3, 1, 0.1, 0deg);
+      }
+      to {
+        transform: rotate3d(0.15, 1, 0.1, 360deg);
+      }
+    }
