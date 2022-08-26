@@ -1,15 +1,13 @@
-import React from 'react'
+import { React } from "react";
 import { BiShoppingBag } from "react-icons/bi";
 
-
-export const CartWidget = () => {
+export const CartWidget = (counter) => {
   return (
     <>
-       <a className="d-flex text-decoration-none align-items-center " href="/">
+      <a className="d-flex text-decoration-none align-items-center " href="/">
         <BiShoppingBag size={25} />
-                    <mark className="shake-hover bg-danger ">3</mark>
-              </a>
-              
+        <mark className="shake-hover bg-danger ">3</mark>
+      </a>
     </>
   );
-}
+};

@@ -1,0 +1,19 @@
+.product__title{
+    font-size: 4rem;
+	text-align: center;
+	position: relative;
+	margin: 30px 0 60px;
+
+    &::after {
+        content: "";
+        width: 100px;
+        position: absolute;
+        margin: 0 auto;
+        height: 4px;
+        border-radius: 1px;
+        background: #fff;
+        left: 0;
+        right: 0;
+        bottom: -20px;
+    }
+}

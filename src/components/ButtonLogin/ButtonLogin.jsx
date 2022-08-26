@@ -5,7 +5,8 @@ function ButtonLogin() {
     <>
       {/* <!-- Start ButtonLogin--> */}
       <a
-        className="nav-link navbar-nav  align-items-center d-flex "
+        // className="nav-link navbar-nav  align-items-center d-flex "
+        className="btn rounded-pill"
         href="/"
       >
         Sign up

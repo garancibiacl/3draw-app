@@ -1,0 +1,13 @@
+.count__container{
+    justify-content: center;
+    grid-gap: 25px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.btn-minus{
+    color: $color-primary;
+
+    &:hover{
+        background-color: $color-primary;
+    }
+}
