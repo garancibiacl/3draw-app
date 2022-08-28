@@ -61,7 +61,7 @@ const Card = ({ producto, reset }) => {
           <strike>${producto.precioVenta}</strike>{" "}
           <b>${producto.precioOferta}</b>
         </p>
-
+        <p className="item-stock"> {producto.stock} Disponibles</p>
         <ItemCount
           stock={5}
           onAdd={onAdd}

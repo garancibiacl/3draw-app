@@ -46,7 +46,7 @@
 	font-size: 18px;
 }
 .carousel .item h4, .carousel .item p, .carousel .item ul {
-	margin-bottom: 5px;
+	margin-bottom: 6px;
 }
 // .carousel .thumb-content .btn {
 // 	color: $color-primary;
@@ -146,4 +146,8 @@
 }
 .bi-start-bg{
 fill:#ffc000; ;
+}
+.item-stock{
+	font-size: 0.8rem;
+	color: $color-primary;
 }
