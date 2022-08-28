@@ -31,6 +31,18 @@ export const Header = ({ title }) => {
           </div>
         </div>
       </header>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        preserveAspectRatio="none"
+        viewBox="0 0 1680 40"
+        class="position-absolute width-full z-1"
+        style={{
+          bottom: "-10px",
+        }}
+      >
+        <path d="M0 40h1680V30S1340 0 840 0 0 30 0 30z" fill="#4a1a89"></path>
+      </svg>
     </div>
   );
 };

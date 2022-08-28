@@ -8,4 +8,6 @@
 
 - Deafio 3: Crea tu landing. Entregado✅
 
-- Desafio 4: Desafío: Contador con botón✅
+- Desafio 4: Contador con botón. Entregado✅
+
+- Desafio 5: Catálogo con MAPS y Promises. Entregado✅

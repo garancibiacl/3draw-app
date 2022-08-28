@@ -4,12 +4,11 @@ import { BiPlus } from "react-icons/bi";
 import { MdAddShoppingCart } from "react-icons/md";
 // import {AddCart} from '../AddCart/AddCart';
 // import { useCounter } from '../Hooks/useCounter'
-
-export const ItemCount = ({ stock, onAdd, min, sum, res }) => {
-  const [count, setCount] = useState(min);
+//TODO
+export const ItemCount = ({ stock, count, setCount, onAdd, min, sum, res }) => {
+  // const [count, setCount] = useState(min);
   const [disabledAdd, setDisabledAdd] = useState(false);
   const [disabledRest, setDisabledRest] = useState(false);
-
 
 
   function add() {
@@ -33,8 +32,6 @@ export const ItemCount = ({ stock, onAdd, min, sum, res }) => {
       setDisabledRest(true);
     }
   }
-
-
   // function reset(){
   //     setCount(min)
   // }
