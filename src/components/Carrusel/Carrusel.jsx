@@ -19,7 +19,7 @@ export const Carrusel = () => {
 
     getProductos
       .then((response) => setProducto(response))
-      // .catch((err) => console.log(err)) 
+      .catch((err) => console.log(err)) 
       // .finally(() => setIsLoading(false));
   }, []);
   

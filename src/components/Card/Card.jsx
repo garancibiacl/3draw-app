@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { BiChevronLeft } from "react-icons/bi";
-import { BiHeart } from "react-icons/bi";
+// import { BiHeart } from "react-icons/bi";
 import { BiStar } from "react-icons/bi";
 import { ItemCount } from "../ItemCount/ItemCount";
-import Wish from "../Helpers/wish";
+import { ButtonLike } from "../ButtonLike/ButtonLike";
+
 
 const Card = ({ producto, reset }) => {
   const [count, setCount] = useState(1);
@@ -16,6 +17,8 @@ const Card = ({ producto, reset }) => {
     });
     setCount(1);
   }
+
+
   return (
     <div className="thumb-wrapper">
       <div className="d-flex justify-content-between">
@@ -24,10 +27,8 @@ const Card = ({ producto, reset }) => {
           <BiChevronLeft size={25} />
           Ver Detalles
         </a>
-
-        <span className="wish-icon" onClick={Wish}>
-          <BiHeart className="fa fa-heart-o" size={25} />
-        </span>
+{/* PEGAR BOTON LIKE */}
+<ButtonLike/>
       </div>
       <div className="img-box">
         <img

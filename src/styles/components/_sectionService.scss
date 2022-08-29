@@ -1,7 +1,7 @@
 .service__rotate{
-    animation: rotation 8s infinite linear;
+    animation: rotation 15s infinite linear;
     margin-bottom: 7rem;
-
+    -webkit-animation: rotation 15s infinite linear;
 }
 .service__bg{
     background-image: url(https://drive.google.com/file/d/1_I8slSo7kq4WHovaM4oLRx6nirNNdfF3/view?usp=sharing) no-repeat;
