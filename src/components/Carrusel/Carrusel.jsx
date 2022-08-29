@@ -1,29 +1,29 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
+import { ItemList } from "../ItemList/ItemList";
+import drawData from "../../data/drawdata";
+import { JellyTriangle } from '@uiball/loaders'
 
-import { ItemList } from '../ItemList/ItemList';
-import drawData from '../../data/drawdata';
 
-// import { AddCart } from "../AddCart/AddCart";
 
 export const Carrusel = () => {
   const [producto, setProducto] = useState([]);
-  // const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const getProductos = new Promise((resolve, reject) => {
       setTimeout(() => {
         resolve(drawData);
-        /* reject('APA'); */
+        /* reject('HOLA'); */
       }, 2000);
     });
 
     getProductos
       .then((response) => setProducto(response))
-      .catch((err) => console.log(err)) 
-      // .finally(() => setIsLoading(false));
+      // .catch((err) => console.log(err));
+      .finally(() => setIsLoading(false));
   }, []);
-  
-  return (
+
+  return   (
     <div className="container-xl">
       <div className="row">
         <div className="col-md-12">
@@ -57,25 +57,23 @@ export const Carrusel = () => {
             </div>
             {/* Wrapper for carousel items */}
             <div className="carousel-inner">
-              <div className="item carousel-item active">
-              
-                <ItemList data={producto} />         
+              <div className="item carousel-item active "
+              disabled={isLoading}>{isLoading ? <JellyTriangle 
+                size={60}
+                speed={1.75} 
+                color="#8733FF"
+
+               />: <ItemList data={producto}  /> }
+     
               </div>
-          
               <div className="item carousel-item">
-          
                 <ItemList data={producto} />
-             
               </div>
               <div className="item carousel-item">
-            
                 <ItemList data={producto} />
-             
               </div>
             </div>
 
-
-            
             {/* Carousel controls */}
             <button
               class="carousel-control-prev"
@@ -107,3 +105,6 @@ export const Carrusel = () => {
     </div>
   );
 };
+
+
+
