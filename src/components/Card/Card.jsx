@@ -63,7 +63,7 @@ const Card = ({ producto, reset }) => {
         </p>
         <p className="item-stock"> {producto.stock} Disponibles</p>
         <ItemCount
-          stock={5}
+          stock={producto.stock}
           onAdd={onAdd}
           count={count}
           setCount={setCount}

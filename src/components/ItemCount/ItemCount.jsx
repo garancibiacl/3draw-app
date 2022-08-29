@@ -52,7 +52,6 @@ export const ItemCount = ({ stock, count, setCount, onAdd, min, sum, res }) => {
         >
           <BiMinus size={20} />
         </button>
-        {/* <p>{stock}</p> */}
         <h4 className="d-flex align-items-center text-black">{count}</h4>
         <button
           type="button"
