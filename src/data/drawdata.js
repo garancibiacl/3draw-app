@@ -4,7 +4,9 @@ const drawdata = [
   {id: 3, nombre: "Soporte para auriculares", precioVenta: 15990, precioOferta: 10990, stock: 3, name: "Soporte para auriculares", image: 'soporte-auriculares.png'}, 
   {id: 4, nombre: "Macetero Buda", precioVenta: 39990, precioOferta: 19990, stock: 10, name: "Macetero Buda", image: 'macetero-buda.png'}, 
   ];
+
   
   export default drawdata;
+
   
 

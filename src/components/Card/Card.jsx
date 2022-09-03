@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { BiChevronLeft } from "react-icons/bi";
-// import { BiHeart } from "react-icons/bi";
 import { BiStar } from "react-icons/bi";
 import { ItemCount } from "../ItemCount/ItemCount";
 import { ButtonLike } from "../ButtonLike/ButtonLike";
+
+// import { Link } from 'react-router-dom'
 
 
 const Card = ({ producto, reset }) => {
@@ -20,6 +21,7 @@ const Card = ({ producto, reset }) => {
 
 
   return (
+
     <div className="thumb-wrapper">
       <div className="d-flex justify-content-between">
         <a href="/" className="text-black mb-3 text-decoration-none">
@@ -31,7 +33,7 @@ const Card = ({ producto, reset }) => {
 <ButtonLike/>
       </div>
       <div className="img-box">
-        <img
+        <img data-tilt
           className="img-fluid"
           src={`/assets/img/${producto.image}`}
           alt={producto.name}
@@ -74,6 +76,7 @@ const Card = ({ producto, reset }) => {
         />
       </div>
     </div>
+    
   );
 };
 

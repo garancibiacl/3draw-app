@@ -105,6 +105,3 @@ export const Carrusel = () => {
     </div>
   );
 };
-
-
-
