@@ -11,3 +11,5 @@
 - Desafio 4: Contador con botón. Entregado✅
 
 - Desafio 5: Catálogo con MAPS y Promises. Entregado✅
+
+- Desafio 6: Detalle del producto. Entregado✅
