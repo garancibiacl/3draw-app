@@ -171,3 +171,12 @@ fill:#ffc000; ;
 	font-size: 0.8rem;
 	color: $color-primary;
 }
+
+
+.text-detail{
+	text-decoration: none;
+
+	&:hover{
+		text-decoration: underline;
+	}
+}

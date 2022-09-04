@@ -1,0 +1,21 @@
+.btn-primary-detail{
+    color: #FFF !important;
+    background-color: #8733FF !important;
+    border: 0;
+
+    &:hover{
+        background-color: $color-action !important;
+    }
+}
+.count__container-detail{
+    justify-content: space-between;
+}
+.item-price{
+    font-size: 1.5rem;
+}
+.item-stock{
+    font-size: 1rem;
+}
+.card-text{
+    font-size: 1.2rem;
+}

@@ -1,22 +1,28 @@
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import "../src/styles/main.scss";
 import { Navbar } from "./components/Navbar/Navbar";
-import { Header } from "./components/Header/Header";
-import { SectionService } from './components/SectionService/SectionService'
-import { SectionProduct } from './components/SectionProduct/SectionProduct'
-
+import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContainer';
+import { Home } from './components/Home/Home';
 export const App = () => {
   return (
-    <>
+    <BrowserRouter>
+    <div className='App'>
       {/* <!-- Navbar--> */}
-      <Navbar saludos='hola' />
-
+<Navbar/>
       {/* <!-- Container --> */}
- 
-       <Header />
-       <SectionService/>
-       <SectionProduct/>
-  
+      {/* <Header /> */}
+      {/* <SectionService/>
+      <SectionProduct/> */}
+      <Routes>
 
-    </>
+       <Route path='/' element={ <Home/>} />
+
+              <Route path='/detalles/:id' element={ <ItemDetailContainer/>} />
+              <Route path="*" element={<h1>Error 404</h1>}></Route>
+       
+
+       </Routes>
+    </div>
+    </BrowserRouter>
   );
 };

@@ -65,7 +65,7 @@ export const ItemCount = ({ stock, count, setCount, onAdd, min, sum, res }) => {
 
       </div>
 
-      <div className="col-12">
+      <div className="col-12 col-6">
         <button  className="btn btn-primary rounded-pill"  onClick={() => onAdd(count)}>
        <MdAddShoppingCart size={20} style={{marginRight: "10px"}}/>
  Agregar al carrito

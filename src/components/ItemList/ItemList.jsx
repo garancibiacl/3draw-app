@@ -6,7 +6,8 @@ export const ItemList = ({ data }) => {
     <div className="row">
 
       <div className="d-flex mb-3" style={{ gridGap: "20px" }}>
-        {data.map((producto) => (
+        {
+        data.map((producto) => (
           <Card  producto={producto} key={producto.id} />
         ))}
      

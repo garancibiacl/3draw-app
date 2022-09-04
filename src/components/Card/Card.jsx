@@ -3,11 +3,13 @@ import { BiChevronLeft } from "react-icons/bi";
 import { BiStar } from "react-icons/bi";
 import { ItemCount } from "../ItemCount/ItemCount";
 import { ButtonLike } from "../ButtonLike/ButtonLike";
+import { Link } from 'react-router-dom';
 
 // import { Link } from 'react-router-dom'
 
 
 const Card = ({ producto, reset }) => {
+  const {id} = producto
   const [count, setCount] = useState(1);
   const Swal = require("sweetalert2");
   function onAdd(count) {
@@ -24,16 +26,15 @@ const Card = ({ producto, reset }) => {
 
     <div className="thumb-wrapper">
       <div className="d-flex justify-content-between">
-        <a href="/" className="text-black mb-3 text-decoration-none">
-          {" "}
+        <Link to={`/detalles/${id}`} className="text-detail text-black mb-3">
           <BiChevronLeft size={25} />
           Ver Detalles
-        </a>
+        </Link>
 {/* PEGAR BOTON LIKE */}
 <ButtonLike/>
       </div>
       <div className="img-box">
-        <img data-tilt
+        <img 
           className="img-fluid"
           src={`/assets/img/${producto.image}`}
           alt={producto.name}
