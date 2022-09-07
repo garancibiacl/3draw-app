@@ -2,12 +2,14 @@ import React, { useEffect, useState } from "react";
 import { ItemList } from "../ItemList/ItemList";
 import drawData from "../../data/drawdata";
 import { JellyTriangle } from '@uiball/loaders'
+// import { useParams } from 'react-router-dom';
 
 
 
 export const Carrusel = () => {
   const [producto, setProducto] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+
 
   useEffect(() => {
     const getProductos = new Promise((resolve, reject) => {
@@ -16,6 +18,14 @@ export const Carrusel = () => {
         /* reject('HOLA'); */
       }, 2000);
     });
+
+    // CREAR EL FILTER 
+    // const getProductos = new Promise((resolve, reject) => {
+    //   setTimeout(() => {
+    //     resolve(drawData.filter(producto => producto.category === categoria));
+    //     /* reject('HOLA'); */
+    //   }, 2000);
+    // });
 
     getProductos
       .then((response) => setProducto(response))

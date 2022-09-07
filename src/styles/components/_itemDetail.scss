@@ -1,6 +1,19 @@
 .container__detail{
     margin-top: 15rem;
     margin-bottom: 30rem;
+    background-image: url(https://www.formget.com/wp-content/uploads/2018/07/header-img.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+    margin: 0 auto;
+    top: 21px;
+    left: 0;
 }
 .wish-icon:hover{
     cursor: pointer;

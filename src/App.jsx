@@ -3,6 +3,8 @@ import "../src/styles/main.scss";
 import { Navbar } from "./components/Navbar/Navbar";
 import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContainer';
 import { Home } from './components/Home/Home';
+// import { Carrusel } from './components/Carrusel/Carrusel';
+import { Soporte } from './components/Soporte/Soporte';
 export const App = () => {
   return (
     <BrowserRouter>
@@ -16,8 +18,12 @@ export const App = () => {
       <Routes>
 
        <Route path='/' element={ <Home/>} />
-
+ 
+              {/* <Route path='/categoria/:categoria' element={ <Carrusel /> } /> */}
+               <Route path='/categoria/:categoria' element={ <Soporte /> } />
               <Route path='/detalles/:id' element={ <ItemDetailContainer/>} />
+
+         
               <Route path="*" element={<h1>Error 404</h1>}></Route>
        
 

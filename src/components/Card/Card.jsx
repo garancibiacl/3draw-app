@@ -9,8 +9,8 @@ import { Link } from 'react-router-dom';
 
 
 const Card = ({ producto, reset }) => {
-  const {id} = producto
   const [count, setCount] = useState(1);
+  const {id} = producto
   const Swal = require("sweetalert2");
   function onAdd(count) {
     Swal.fire({
@@ -26,7 +26,7 @@ const Card = ({ producto, reset }) => {
 
     <div className="thumb-wrapper">
       <div className="d-flex justify-content-between">
-        <Link to={`/detalles/${id}`} className="text-detail text-black mb-3">
+        <Link className="text-detail text-black mb-3" to={`/detalles/${id} `} >
           <BiChevronLeft size={25} />
           Ver Detalles
         </Link>

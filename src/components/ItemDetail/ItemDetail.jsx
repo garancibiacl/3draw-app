@@ -15,10 +15,10 @@ export const ItemDetail = ({ producto }) => {
       setCount(1);
     }
   return (
-    <>
-      <div className="container container__detail">
+    <div className="container__detail">
+      <div className="container " style={{marginTop: "12rem"}}>
         <nav>
-          <ol className="breadcrumb">
+          <ol className="breadcrumb pb-4">
             <li className="breadcrumb-item">
               <a href="/">Home</a>
             </li>
@@ -27,7 +27,7 @@ export const ItemDetail = ({ producto }) => {
           </ol>
         </nav>
         <div className="row">
-          <div className="col-md-6 d-flex p-4 justify-content-center align-content-center">
+          <div className="col-md-6 d-flex p-4 justify-content-center align-content-center" style={{marginBottom: "13rem"}}>
           <div className="card mb-3 p-5" style={{ maxWidth: "50rem" }}>
             <img
               className="rounded mx-auto d-block"
@@ -83,6 +83,6 @@ export const ItemDetail = ({ producto }) => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };

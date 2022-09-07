@@ -8,7 +8,7 @@ export const Header = ({ title }) => {
         <div className="container">
           <div className="row">
             <div className="col-md-6  ">
-              <h1 className="header__title mb-4 animate__animated animate__backInLeft">
+              <h1 className="header__title mb-4 animate__animated animate__fadeInDown">
                 Impresiones realmente<strong> útiles</strong> en{" "}
                 <strong> 3D </strong>
               </h1>
@@ -18,15 +18,15 @@ export const Header = ({ title }) => {
                 <img className="animate__animated animate__heartBeat" src="/assets/img/icons-html-5.svg" alt="" />
               </div>
               <div>
-                <a className="mouse__container d-flex mt-5" href="/">
+                <a className="mouse__container d-flex mt-5 animate__animated animate__fadeInUp" href="/">
                   <span className="mouse-btn">
-                    <span className="mouse-scroll"></span>
+                    <span className="mouse-scroll "></span>
                   </span>
                   <h1 className="mouse__scroll">Scroll Down</h1>
                 </a>
               </div>
             </div>
-            <div className="col-md-6 header__img animate__animated animate__slideInRight">
+            <div className="col-md-6 header__img animate__animated animate__zoomIn">
               <img className="header__img " src="/assets/img/icons-header.png" alt="" />
             </div>
           </div>

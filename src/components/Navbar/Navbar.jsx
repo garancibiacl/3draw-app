@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ButtonLogin from "../ButtonLogin/ButtonLogin";
 import { CartWidget } from "../CartWidget/CartWidget";
+import { Link } from 'react-router-dom';
 
 export const Navbar = (saludos) => {
   const [navSize, setnavSize] = useState("6rem");
@@ -27,9 +28,9 @@ export const Navbar = (saludos) => {
         }}
       >
         <div className="container">
-          <a className="navbar-brand" href="/">
+          <Link to='/' className="navbar-brand" href="/">
             <img src="assets/img/brand.png" alt="Logo" />
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -44,22 +45,22 @@ export const Navbar = (saludos) => {
           <div className="collapse navbar-collapse mt-1" id="navbarColor01">
             <ul className="navbar-nav me-auto fw-light p-2">
               <li className="nav-item ">
-                <a
+                <Link to='/'
                   className=" hvr-underline-from-center  nav-link active"
-                  href="/"
+  
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="hvr-underline-from-center nav-link " href="/">
-                  Servicio
-                </a>
+                <Link to='/categoria/Soporte' className="hvr-underline-from-center nav-link " href="/">
+                  Soporte
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="hvr-underline-from-center nav-link" href="/">
-                  Tienda
-                </a>
+                <Link to='/categoria/Lámpara' className="hvr-underline-from-center nav-link" href="/">
+                  Lámpara
+                </Link>
               </li>
             </ul>
             <div className="container__navRight shake-hover d-flex ">

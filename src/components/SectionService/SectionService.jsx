@@ -7,7 +7,7 @@ export const SectionService = () => {
       <div className="container ">
         <div className="  col-md-12 ">
           <div className="row ">
-            <div className="col-md-6 mt-5 ">
+            <div className="col-md-6 mt-5 animate__animated animate__fadeIn">
               <h4>OVERVIEW 🔥</h4>
               <h1 className="service__title">Nuestros Servicios<b style={{color: '#e83283'}}>.</b></h1>
               <p className="service__description mb-4">

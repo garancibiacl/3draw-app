@@ -3,9 +3,8 @@ import { ItemDetail } from '../ItemDetail/ItemDetail'
 import { useParams } from 'react-router-dom';
 import drawdata from '../../data/drawdata';
 
-
 export const ItemDetailContainer = () => {
-    const {id} = useParams()
+    const { id } = useParams()
     const [producto, setProducto] = useState({})
     const getProductos = () => new Promise((resolve, reject) => {
         setTimeout(()=> resolve(drawdata.find(product => product.id === Number(id) )), 1000)
@@ -15,7 +14,6 @@ export const ItemDetailContainer = () => {
         getProductos()
         .then(response => setProducto(response))
       }, [])
-
 
     
     return (
