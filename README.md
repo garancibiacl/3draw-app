@@ -2,7 +2,7 @@
 &#128425; Curso React Js - CODERHOUSE
 
 # Descripción del Proyecto
-Esta idea surgio porque me llama mucho la atención lo que es impresión 3D, objetos que se pueden utilizar en el uso diario, domestico,entretenimiento, medicina, ciencia, etc. Otro dato curioso que me encanta mucho la animación 3D, modificar elementos con Javascript y ver sus transformaciones. Es fascinante ver una web llena de vida. Desde este concepto se penso en un E-commerce Store de productos de Impresiones realmente útilies en 3D. 
+3Draw es un concepto que viene de (3D) de tercera diminensión y (Draw) de dibujo en ingles. Esta idea surgio porque me llama mucho la atención lo que es impresión 3D, objetos que se pueden utilizar en el uso diario, domestico, entretenimiento, medicina, ciencia, etc. Otro dato curioso que me encanta mucho la animación 3D, modificar elementos con Javascript y ver sus transformaciones. Es fascinante ver una web llena de vida. Desde este concepto se penso en una app 3Draw E-commerce Store de productos de Impresiones realmente útilies en 3D. 
 
 # Desafíos:
 - Desafio 1:Crear una aplicación utilizando el CLI con el nombre de tu tienda, y ejecuta los comandos necesarios para instalar React, configurarlo y visualizarlo en tu navegador. Entregado✅
@@ -19,3 +19,4 @@ Esta idea surgio porque me llama mucho la atención lo que es impresión 3D, obj
 
 - Desafio 7: Routing y Navegacion. Entregado✅
 
+- Desafio 8: Desafío: Sincronizar counter. Entregado✅

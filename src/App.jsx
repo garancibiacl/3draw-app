@@ -4,9 +4,13 @@ import { Navbar } from "./components/Navbar/Navbar";
 import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContainer';
 import { Home } from './components/Home/Home';
 // import { Carrusel } from './components/Carrusel/Carrusel';
+import  { CarritoContext } from './components/CartContext/CartContext'
 import { Soporte } from './components/Soporte/Soporte';
 export const App = () => {
   return (
+    
+    <CarritoContext>
+
     <BrowserRouter>
     <div className='App'>
       {/* <!-- Navbar--> */}
@@ -30,5 +34,8 @@ export const App = () => {
        </Routes>
     </div>
     </BrowserRouter>
+
+    </CarritoContext>
+
   );
 };
