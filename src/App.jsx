@@ -2,14 +2,15 @@ import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import "../src/styles/main.scss";
 import { Navbar } from "./components/Navbar/Navbar";
 import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContainer';
+import  CartContainer  from './components/CartView/CartContainer';
 import { Home } from './components/Home/Home';
 // import { Carrusel } from './components/Carrusel/Carrusel';
-import  { CarritoContext } from './components/CartContext/CartContext'
+import  { CartContextProvider  } from './components/CartContext/CartContext'
 import { Soporte } from './components/Soporte/Soporte';
 export const App = () => {
   return (
     
-    <CarritoContext>
+    <CartContextProvider>
 
     <BrowserRouter>
     <div className='App'>
@@ -26,6 +27,7 @@ export const App = () => {
               {/* <Route path='/categoria/:categoria' element={ <Carrusel /> } /> */}
                <Route path='/categoria/:categoria' element={ <Soporte /> } />
               <Route path='/detalles/:id' element={ <ItemDetailContainer/>} />
+              <Route path='/cart' element={<CartContainer/>}></Route>
 
          
               <Route path="*" element={<h1>Error 404</h1>}></Route>
@@ -35,7 +37,7 @@ export const App = () => {
     </div>
     </BrowserRouter>
 
-    </CarritoContext>
+    </CartContextProvider>
 
   );
 };

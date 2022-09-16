@@ -2,19 +2,30 @@ import React, { useState } from "react";
 import { ItemCountDetail } from "../../ItemCountDetail/ItemCountDetail";
 import { BiStar } from "react-icons/bi";
 import { ButtonLike } from "../ButtonLike/ButtonLike";
-
-export const ItemDetail = ({ producto }) => {
+import { Link } from 'react-router-dom'
+import  { useCartContext }  from "../CartContext/CartContext";
+export const ItemDetail = ({ producto}) => {
   const [count, setCount] = useState(1);
 
-  const Swal = require("sweetalert2");
-  function onAdd(count) {
-    Swal.fire({
-      title: "Felicidades!",
-      text: `Se han agregado ${count} productos`,
-      icon: "success",
-    });
-    setCount(1);
-  }
+  const { addToCart } = useCartContext();
+
+  const [show, setshow] = useState(true)
+
+  const onAdd = (count) => {
+      setshow(false);
+      producto.stock = producto.stock - count;
+      addToCart(producto, count);
+  };
+
+  // const Swal = require("sweetalert2");
+  // function onAdd(count) {
+  //   Swal.fire({
+  //     title: "Felicidades!",
+  //     text: `Se han agregado ${count} productos`,
+  //     icon: "success",
+  //   });
+  //   setCount(1);
+  // }
 
 
 
@@ -77,6 +88,7 @@ export const ItemDetail = ({ producto }) => {
                   <b>${producto.precioOferta}</b>
                 </p>
                 <p className="item-stock"> {producto.stock} Disponibles</p>
+                {show ?
                 <ItemCountDetail
                   stock={producto.stock}
                   onAdd={onAdd}
@@ -86,6 +98,8 @@ export const ItemDetail = ({ producto }) => {
                   sum={1}
                   res={1}
                 />
+                :
+                <Link to="/cart"><button className='btn' >Ir al Carrito</button></Link>}
                 <p className="text-black-50"> Categoría: {producto.category}</p>
               </div>
             </div>

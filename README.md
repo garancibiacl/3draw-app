@@ -20,3 +20,5 @@
 - Desafio 7: Routing y Navegacion. Entregado✅
 
 - Desafio 8: Desafío: Sincronizar counter. Entregado✅
+
+- Desafio 9: Desafío: CartContext. Entregado✅
