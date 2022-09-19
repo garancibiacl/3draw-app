@@ -2,12 +2,14 @@
 import { useCartContext } from "../CartContext/CartContext"
 import drawData from "../../data/drawdata";
 import { BiTrash } from "react-icons/bi";
+import useCurrency from "../Hooks/useCurrency"
 
 // FUNCION QUE MUESTRA DATA DE PRODUCTOS AGREGADOS EN VISTA CART
-function ItemCart({ id, cant}) {
-    const { removeItem } = useCartContext()
-    const producto = drawData.find((el) => el.id === id)
-    return (
+function ItemCart({ id, item}) {
+    const {totalPrice, totalQuantity, removeItem} = useCartContext()
+    const producto = drawData.find((producto) => producto.id === id)
+    const { formatter } = useCurrency();
+    return  (
 
 
         <div className="container" style={{marginTop: "10rem", marginBottom: "20rem"}}>
@@ -37,15 +39,15 @@ function ItemCart({ id, cant}) {
           alt={producto.name}
         /></td>
             <td>{producto.nombre}</td>
-            <td>{cant}</td>
-            <td>{producto.precioOferta}</td>
-            <td>{producto.precioOferta * cant}</td>
-            <td>    <a href="/" onClick={() => removeItem(id)}>
+            <td>{totalQuantity()}</td>
+            <td>{formatter.format(producto.precioOferta)}</td>
+            <td>{totalPrice()}</td>
+            <td><a href="/" onClick={() => removeItem(id)}>
                <BiTrash size={25}/>
             </a></td>
           </tr>
           
-          
+
         </tbody>
       </table>
 

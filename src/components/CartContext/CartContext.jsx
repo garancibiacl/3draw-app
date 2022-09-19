@@ -1,54 +1,79 @@
-import { createContext, useContext, useState } from 'react'
+import { createContext, useContext, useState } from "react";
+import useCurrency from "../Hooks/useCurrency"
+const CartContext = createContext();
 
-const CartContext = createContext()
+const useCartContext = () => useContext(CartContext);
 
-const useCartContext = () => useContext(CartContext)
 
 const CartContextProvider = ({ children }) => {
+  const [cartList, setCartList] = useState([]);
+  const { formatter } = useCurrency();
 
-    const [cartList, setCartList] = useState([])
 
-    const addToCart  = (nombre, id, quantity) => {
-        if (cartList.length === 0) {
-            setCartList([{ nombre: nombre, id: id, cant: quantity }])
-        } else {
-            const findItemInCart = cartList.find(producto => producto.id === id)
-            if (findItemInCart) {
-                findItemInCart.cant = findItemInCart.cant + quantity
-                setCartList([...cartList])
-            } else {
-                setCartList([...cartList, { nombre: nombre, id: id, cant: quantity }])
-            }
-        }
+  const addToCart = (item, quantity) => {
+    if (isInCart(item.id)) {
+      setCartList(
+        cartList.map((product) => {
+          return product.id === item.id
+            ? { ...product, quantity: product.quantity + quantity }
+            : product;
+        })
+      );
+    } else {
+      setCartList([...cartList, { ...item, quantity }]);
     }
+  };
 
-    const removeItem = (itemId) => {
-        const filteredArray = cartList.filter(
-            (item) => item.id !== itemId
+  console.log(cartList);
+  
+  const removeItem = (id) => {
+    const newCart = cartList.filter((product) => product.id !== id);
+    setCartList(newCart);
+  };
+
+  const clear = () => {
+    setCartList([]);
+  };
+
+  const isInCart = (id) =>
+    cartList.find((product) => product.id === id) ;
+
+    const totalQuantity = () => {
+      return cartList.reduce((acc, product) => acc + product.quantity, 0);
+    };
+  
+    const totalPrice = () => {
+      return formatter.format(
+        cartList.reduce((acc, product) => acc + product.precioOferta * product.quantity, 0)
+      );
+    };
+
+    const totalFinal = () => {
+      return formatter.format(
+        cartList.reduce(
+          (acc, product) => acc + product.priceOferta * product.quantity,
+          0
         )
-        setCartList(filteredArray)
-        console.log(setCartList)
-    }
+      );
+    };
+  
 
-    const clear = () => { setCartList([])}
+  return (
+    <CartContext.Provider
+      value={{
+        cartList,
+        addToCart,
+        removeItem,
+        clear,
+        isInCart,
+        totalQuantity,
+        totalPrice,
+        totalFinal,
+      }}
+    >
+      {children}
+    </CartContext.Provider>
+  );
+};
 
-    const isInCart = (id) => { cartList.some((item) => item.id === id)}
-
-
-    const cantidadTotal = () => {
-        if(cartList.length === 0 ){
-            return ""
-        }else {
-            const resultado = cartList.reduce((acc, curr) => acc + curr.cant, 0)
-            return resultado
-        }
-    }    
-
-    return (
-        <CartContext.Provider value={{ cartList, addToCart, removeItem, clear, isInCart, cantidadTotal}}>
-            {children}
-        </CartContext.Provider>
-    )
-}
-
-export { CartContext, CartContextProvider, useCartContext } 
+export { CartContext, CartContextProvider, useCartContext };
