@@ -58,7 +58,10 @@ export const ItemDetail = ({ producto}) => {
             <div className="card bg-light mb-3" style={{ maxWidth: "50rem" }}>
               <div className="card-body">
                 <div className="d-flex justify-content-between">
+                  <div className="row">
+                       <p className="text-black-50"> Categoría: {producto.category}</p>
                   <h4 className="card-title">{producto.nombre}</h4>
+                  </div>
                   <ButtonLike />
                 </div>
                 <div className="star-rating">
@@ -99,8 +102,12 @@ export const ItemDetail = ({ producto}) => {
                   res={1}
                 />
                 :
-                <Link to="/cart"><button className='btn' >Ir al Carrito</button></Link>}
-                <p className="text-black-50"> Categoría: {producto.category}</p>
+                
+                <Link to="/cart"><button className='btn btn-primary btn-primary-mb rounded-pill' >Ver Carrito</button>
+                      <Link to="/"><button className='btn rounded-pill text-black mx-3 ' >Seguir Comprando</button></Link>
+                </Link>}
+         
+           
               </div>
             </div>
           </div>

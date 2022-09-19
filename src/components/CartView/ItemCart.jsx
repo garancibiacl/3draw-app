@@ -3,6 +3,7 @@ import { useCartContext } from "../CartContext/CartContext"
 import drawData from "../../data/drawdata";
 import { BiTrash } from "react-icons/bi";
 import useCurrency from "../Hooks/useCurrency"
+// import { Link } from 'react-router-dom'
 
 // FUNCION QUE MUESTRA DATA DE PRODUCTOS AGREGADOS EN VISTA CART
 function ItemCart({ id, item}) {
@@ -16,7 +17,7 @@ function ItemCart({ id, item}) {
             <div className="row">
                
         <div className='div-card-cart' key={producto.id}>
-                <table className="table caption-top">
+                <table className="table caption-top  table-hover">
         <thead>
           <tr>
 
@@ -31,7 +32,7 @@ function ItemCart({ id, item}) {
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr className="table-active">
             <th scope="row">1</th>
       
             <td><img className="img-fluid"
@@ -50,7 +51,7 @@ function ItemCart({ id, item}) {
 
         </tbody>
       </table>
-
+      
             </div>
         
         </div>

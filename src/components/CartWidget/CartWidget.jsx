@@ -9,7 +9,7 @@ export const CartWidget = () => {
 
   return (
     <>
-      <Link to="/cart" className="d-flex text-decoration-none align-items-center " href="/">
+      <Link type="button"  to="/cart" className="d-flex text-decoration-none align-items-center" data-bs-toggle="tooltip" data-bs-placement="bottom" href="/">
         <BiShoppingBag size={25} />
         {}
         <mark className="shake-hover bg-danger "  >{totalQuantity()}</mark>
