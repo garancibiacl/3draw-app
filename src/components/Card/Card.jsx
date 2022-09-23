@@ -18,11 +18,16 @@ const Card = ({ producto, reset }) => {
   const onAdd = (count) => {
       producto.stock = producto.stock - count;
       addToCart(producto, count);
+      Swal.fire({
+        title: "Felicidades!",
+        text: `Se han agregado ${count} productos`,
+        icon: "success",
+      });
   };
 
   const {id} = producto
-  // const Swal = require("sweetalert2");
-  // function onAdd(count) {
+  const Swal = require("sweetalert2");
+  // const onAdd = (count) => {
   //   Swal.fire({
   //     title: "Felicidades!",
   //     text: `Se han agregado ${count} productos`,
