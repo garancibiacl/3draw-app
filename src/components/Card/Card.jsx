@@ -4,26 +4,35 @@ import { BiStar } from "react-icons/bi";
 import { ItemCount } from "../ItemCount/ItemCount";
 import { ButtonLike } from "../ButtonLike/ButtonLike";
 import { Link } from 'react-router-dom';
+import  { useCartContext }  from "../CartContext/CartContext";
 
 // import { Link } from 'react-router-dom'
 
 
 const Card = ({ producto, reset }) => {
   const [count, setCount] = useState(1);
+
+  const { addToCart } = useCartContext();
+
+
+  const onAdd = (count) => {
+      producto.stock = producto.stock - count;
+      addToCart(producto, count);
+  };
+
   const {id} = producto
-  const Swal = require("sweetalert2");
-  function onAdd(count) {
-    Swal.fire({
-      title: "Felicidades!",
-      text: `Se han agregado ${count} productos`,
-      icon: "success",
-    });
-    setCount(1);
-  }
+  // const Swal = require("sweetalert2");
+  // function onAdd(count) {
+  //   Swal.fire({
+  //     title: "Felicidades!",
+  //     text: `Se han agregado ${count} productos`,
+  //     icon: "success",
+  //   });
+  //   setCount(1);
+  // }
 
 
   return (
-
     <div className="thumb-wrapper">
       <div className="d-flex justify-content-between">
         <Link className="text-detail text-black mb-3" to={`/detalles/${id} `} >
@@ -66,6 +75,8 @@ const Card = ({ producto, reset }) => {
           <b>${producto.precioOferta}</b>
         </p>
         <p className="item-stock"> {producto.stock} Disponibles</p>
+
+    
         <ItemCount
           stock={producto.stock}
           onAdd={onAdd}
@@ -75,8 +86,12 @@ const Card = ({ producto, reset }) => {
           sum={1}
           res={1}
         />
+
+
+       
       </div>
     </div>
+    
     
   );
 };

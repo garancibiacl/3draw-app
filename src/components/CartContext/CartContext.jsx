@@ -36,12 +36,12 @@ const CartContextProvider = ({ children }) => {
   };
 
   const isInCart = (id) =>
-    cartList.find((product) => product.id === id) ;
+    cartList.some((product) => product.id === id) ? true : false;
 
     const totalQuantity = () => {
       return cartList.reduce((acc, product) => acc + product.quantity, 0);
     };
-  
+
     const totalPrice = () => {
       return formatter.format(
         cartList.reduce((acc, product) => acc + product.precioOferta * product.quantity, 0)
@@ -51,7 +51,7 @@ const CartContextProvider = ({ children }) => {
     const totalFinal = () => {
       return formatter.format(
         cartList.reduce(
-          (acc, product) => acc + product.priceOferta * product.quantity,
+          (acc, product) => acc + product.precioOferta * product.quantity,
           0
         )
       );

@@ -14,9 +14,6 @@ export const CartWidget = () => {
         {}
         <mark className="shake-hover bg-danger "  >{totalQuantity()}</mark>
       </Link>
-
-  
-      
     </>
   );
 };

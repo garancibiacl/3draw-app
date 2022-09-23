@@ -22,3 +22,7 @@
 - Desafio 8: Sincronizar counter. Entregado✅
 
 - Desafio 9: CartContext. Entregado✅
+
+- Desafio 10: Desafío: Cart View✅
+
+
