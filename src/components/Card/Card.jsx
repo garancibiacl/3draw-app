@@ -6,14 +6,16 @@ import { ButtonLike } from "../ButtonLike/ButtonLike";
 import { Link } from 'react-router-dom';
 import  { useCartContext }  from "../CartContext/CartContext";
 
-// import { Link } from 'react-router-dom'
 
 
-const Card = ({ producto, reset }) => {
+const Card = ({ producto}) => {
   const [count, setCount] = useState(1);
 
   const { addToCart } = useCartContext();
 
+  const {id} = producto
+
+  const Swal = require("sweetalert2");
 
   const onAdd = (count) => {
       producto.stock = producto.stock - count;
@@ -25,16 +27,6 @@ const Card = ({ producto, reset }) => {
       });
   };
 
-  const {id} = producto
-  const Swal = require("sweetalert2");
-  // const onAdd = (count) => {
-  //   Swal.fire({
-  //     title: "Felicidades!",
-  //     text: `Se han agregado ${count} productos`,
-  //     icon: "success",
-  //   });
-  //   setCount(1);
-  // }
 
 
   return (
@@ -50,7 +42,7 @@ const Card = ({ producto, reset }) => {
       <div className="img-box">
         <img 
           className="img-fluid"
-          src={`/assets/img/${producto.image}`}
+          src={`${producto.image}`}
           alt={producto.name}
         />
       </div>

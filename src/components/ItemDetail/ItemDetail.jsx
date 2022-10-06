@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ItemCountDetail } from "../../ItemCountDetail/ItemCountDetail";
+import { ItemCountDetail } from "../ItemCountDetail/ItemCountDetail";
 import { BiStar } from "react-icons/bi";
 import { ButtonLike } from "../ButtonLike/ButtonLike";
 import { Link } from 'react-router-dom'
@@ -15,7 +15,12 @@ export const ItemDetail = ({ producto}) => {
       setshow(false);
       producto.stock = producto.stock - count;
       addToCart(producto, count);
-  };
+
+      };
+    
+  
+
+
 
   // const Swal = require("sweetalert2");
   // function onAdd(count) {
@@ -49,7 +54,7 @@ export const ItemDetail = ({ producto}) => {
             <div className="card mb-3 p-5" style={{ maxWidth: "50rem" }}>
               <img
                 className="rounded mx-auto d-block"
-                src={`/assets/img/${producto.image}`}
+                src={`${producto.image}`}
                 alt={producto.name}
               />
             </div>
@@ -93,13 +98,13 @@ export const ItemDetail = ({ producto}) => {
                 <p className="item-stock"> {producto.stock} Disponibles</p>
                 {show ?
                 <ItemCountDetail
-                  stock={producto.stock}
-                  onAdd={onAdd}
-                  count={count}
-                  setCount={setCount}
-                  min={1}
-                  sum={1}
-                  res={1}
+                stock={producto.stock}
+                onAdd={onAdd}
+                count={count}
+                setCount={setCount}
+                min={1}
+                sum={1}
+                res={1}
                 />
                 :
                 

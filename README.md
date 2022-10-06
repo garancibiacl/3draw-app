@@ -25,4 +25,10 @@
 
 - Desafio 10: Desafío: Cart View✅
 
+- Desafio 11: Desafío: Item Collection✅
+
+
+
+
+
 

@@ -35,7 +35,7 @@ function ItemCart({ item }) {
                 <td>
                   <img
                     className="img-fluid"
-                    src={`/assets/img/${item.image}`}
+                    src={`${item.image}`}
                     alt={item.name}
                   />
                 </td>
