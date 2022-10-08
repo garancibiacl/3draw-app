@@ -1,7 +1,16 @@
 import React from "react";
+import {useRef} from 'react'
 
+export const Header = () => {
 
-export const Header = ({ title }) => {
+  const services = useRef(null);
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top:elementRef.current.offsetTop,
+      behavior: 'smooth',
+    })
+  }
+
   return (
     <div className="pt-4 text-white">
       <header className=" header__bg py-5 mt-5 ">
@@ -18,7 +27,7 @@ export const Header = ({ title }) => {
                 <img className="animate__animated animate__heartBeat" src="/assets/img/icons-html-5.svg" alt="" />
               </div>
               <div>
-                <a className="mouse__container d-flex mt-5 animate__animated animate__fadeInUp" href="/">
+                <a href="/" className="mouse__container d-flex mt-5 animate__animated animate__fadeInUp" onClick={() => scrollToSection(services)}>
                   <span className="mouse-btn">
                     <span className="mouse-scroll "></span>
                   </span>
@@ -31,19 +40,8 @@ export const Header = ({ title }) => {
             </div>
           </div>
         </div>
-        {/* <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        preserveAspectRatio="none"
-        viewBox="0 0 1680 40"
-        class="position-absolute width-full z-1"
-        style={{
-          bottom: "0px",
-        }}
-      >
-        <path d="M0 40h1680V30S1340 0 840 0 0 30 0 30z" fill="#4a1a89"></path>
-      </svg> */}
       </header>
+   
  
     </div>
   );

@@ -1,4 +1,8 @@
 import React from 'react'
+import { AiOutlineGithub } from "react-icons/ai";
+import { AiFillLinkedin } from "react-icons/ai";
+import { AiFillInstagram } from "react-icons/ai";
+
 
 export const Footer = () => {
   return (
@@ -17,7 +21,7 @@ Suscríbete a <strong>nuestro boletín</strong>
             </div>
             <div className="col-md-5 col-12">
               <div className="form-outline form-white">
-                <input type="email" id="form5Example29" className="form-control" />
+                <input type="email" id="form5Example29" className="form-control" placeholder="contacto@tucorreo.cl" />
         
               </div>
             </div>
@@ -32,17 +36,26 @@ Suscríbete a <strong>nuestro boletín</strong>
           </div>
         </form>
       </section>
-    </div>
-    <div className="row pb-3 pt-4 border-top">
-        <div className="col-md-6">
-        <p className="copyright">Hecho con ❤️&nbsp; &nbsp;de Gustavo © <a className='url-web' href="https://piensaentuweb.cl/" target="#">Piensa en tu Web</a>
+      <div className="row  pt-4 border-top">
+        <div className="col-md-6 text-start">
+        <p className="copyright">Hecho con ❤️ &nbsp;de Gustavo © <a  className='url-web__copyright' href="https://piensaentuweb.cl/">Piensa en tu Web</a>
           </p>
         </div>
-        <div className="col-md-6 text-md-right">
-          <p className="copyright">
-            Copyright ©2022 All rights reserved.</p>
+        <div className="col-md-6 text-end">
+         
+        <a href="https://www.linkedin.com/in/gustavo-arancibia-53127a97/"  className="me-4 btn-secondary">
+        <AiFillLinkedin size={25} />
+        </a>
+        <a href="https://github.com/garancibiacl"  className="me-4 btn-secondary">
+        <AiOutlineGithub size={25} />
+        </a>
+        <a href="https://github.com/garancibiacl"  className="btn-secondary">
+        <AiFillInstagram size={25} />
+        </a>
         </div>
       </div>
+    </div>
+
     {/* Copyright */}
   </footer>
   )

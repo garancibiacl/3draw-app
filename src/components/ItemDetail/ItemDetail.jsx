@@ -11,27 +11,19 @@ export const ItemDetail = ({ producto}) => {
 
   const [show, setshow] = useState(true)
 
+  const Swal = require("sweetalert2");
   const onAdd = (count) => {
       setshow(false);
       producto.stock = producto.stock - count;
       addToCart(producto, count);
+      Swal.fire({
+        title: "Felicidades!",
+        text: `Se han agregado ${count} productos`,
+        icon: "success",
+      });
+      
 
       };
-    
-  
-
-
-
-  // const Swal = require("sweetalert2");
-  // function onAdd(count) {
-  //   Swal.fire({
-  //     title: "Felicidades!",
-  //     text: `Se han agregado ${count} productos`,
-  //     icon: "success",
-  //   });
-  //   setCount(1);
-  // }
-
 
 
   return (

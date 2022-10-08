@@ -63,8 +63,7 @@
 
 }
 .header__img  img{
-  animation: animation-bg 10s ease infinite !important;
-  -webkit-animation: animation-bg 10s ease infinite !important;
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
  width: 100%;
   height: 100%;
 

@@ -1,8 +1,9 @@
 import React from "react";
 import { BiRightArrowAlt } from "react-icons/bi";
+// import {services}  from '../Header/Header'
 export const SectionService = () => {
   return (
-    <div className="mt-5 mb-5 service__bg" >
+    <div className="mt-5 mb-5 service__bg">
       
       <div className="container ">
         <div className="  col-md-12 ">
@@ -22,13 +23,13 @@ export const SectionService = () => {
                 Cotiza tu proyecto 
                 <BiRightArrowAlt/>
               </button>
-              <img src="assets/img/icons-service.png" class="img-fluid mt-4" alt="img-fluid"></img>
+              <img src="assets/img/icons-service.png" className="img-fluid mt-4 service__animation" alt="img-fluid"></img>
 
             </div>
             <div className="col-md-6">
               <img
-                className="service__rotate"
-                src="/assets/img/icons-3d.svg"
+                className="service__rotate img-fluid"
+                src="/assets/img/hero-img.png"
                 alt=""
               />
             </div>

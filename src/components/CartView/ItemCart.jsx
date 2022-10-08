@@ -34,6 +34,7 @@ function ItemCart({ item }) {
                 <th scope="row">1</th>
                 <td>
                   <img
+                          width="100"
                     className="img-fluid"
                     src={`${item.image}`}
                     alt={item.name}

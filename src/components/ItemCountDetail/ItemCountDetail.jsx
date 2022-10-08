@@ -7,6 +7,8 @@ export const  ItemCountDetail = ({ stock, count, setCount, onAdd, min, sum, res 
     const [disabledAdd, setDisabledAdd] = useState(false);
     const [disabledRest, setDisabledRest] = useState(false);
 
+    
+
   
     function add() {
       if (count < stock) {

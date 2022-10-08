@@ -1,5 +1,9 @@
 .bg-footer{
-    background: linear-gradient(45deg, #2a1a5e 0%, #5126a7 100%);
+
+    color: #fff;
+    font-size: 14px;
+    background: linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%), url(https://bootstrapmade.com/demo/templates/Techie/assets/img/hero-bg.jpg) center center no-repeat;
+    background-size: cover;
 }
 .mail-gif{
     width: 10%;
@@ -9,8 +13,24 @@
     font-family: $fonts-secondary;
     font-weight: 200;
     font-size: 1.5rem;
+
 }
-.url-web{
+.url-web, a{
     text-decoration: none;
     font-family: $fonts-secondary;
+    font-weight: 800;
+
 }
+.btn-back-to-top {
+    position: fixed;
+
+
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+cursor: pointer;
+
+
+    transition: all 0.4s;
+
+    }

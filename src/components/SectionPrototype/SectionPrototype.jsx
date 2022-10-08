@@ -28,23 +28,23 @@ export const SectionPrototype = () => {
           </div>
           <div className="col-md-6">
           <div className="row gx-5">
-        <div className="col-md-6">
-          <div className="p-3 text-end">
+        <div className="col-md-6">  
+          <div className="p-3 text-end animate__animated animate__fadeInUp">
           <img src="assets/img/macetero-group.png" class="img-fluid mt-4" alt="img-fluid"></img>
           </div>
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6 animate__animated animate__fadeInUp">
           <div className="p-3">
           <img src="assets/img/accesorios-group.png" class="img-fluid mt-4" alt="img-fluid"></img>
           </div>
         </div>
 
-        <div className="col-md-6">
+        <div className="col-md-6 animate__animated animate__fadeInUp">
           <div className="p-3 text-end">
           <img src="assets/img/producciones-group.png" class="img-fluid mt-4" alt="img-fluid"></img>
           </div>
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6 animate__animated animate__fadeInUp">
           <div className="p-3">
           <img src="assets/img/figuras-group.png" class="img-fluid mt-4" alt="img-fluid"></img>
           </div>
