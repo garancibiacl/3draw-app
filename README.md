@@ -28,7 +28,7 @@
 - Desafio 11: Desafío: Item Collection✅
 
 # Librerías usadas
-- <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://sweetalert2.github.io/images/SweetAlert2.png" alt="html5" width="40" height="40"/> </a> Sweet Alert 2: Una librería de JavaScript para mostrar alertas y diálogos de confirmación.
+- <a href="https://sweetalert2.github.io/" target="_blank" rel="noreferrer"> <img src="https://avatars.githubusercontent.com/u/35137722?s=200&v=4" alt="Swwwtalert2" width="40" height="40"/> </a> Sweet Alert 2: Una librería de JavaScript para mostrar alertas y diálogos de confirmación.
 
 
 
