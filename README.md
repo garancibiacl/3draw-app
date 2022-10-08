@@ -27,6 +27,9 @@
 
 - Desafio 11: Desafío: Item Collection✅
 
+# Librerías usadas
+- <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img Sweet Alert 2: Una librería de JavaScript para mostrar alertas y diálogos de confirmación.
+
 
 
 
