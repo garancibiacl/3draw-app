@@ -1,6 +1,8 @@
 
-
+<center>
 ![Logo](https://piensaentuweb.cl/wp-content/uploads/2022/10/logo-v1.png)
+
+</center>
 
 &#128425; Curso React Js - CODERHOUSE
 
@@ -35,7 +37,7 @@
 
 <a href="https://bootswatch.com/quartz/" target="_blank" rel="noreferrer"> <img src="https://camo.githubusercontent.com/51da0973891f15de1404fe9e17951136a420dafec4f9bbfa883e6283623c9317/68747470733a2f2f626f6f747377617463682e636f6d2f5f6173736574732f696d672f6c6f676f2d6461726b2e737667" alt="Bootswatch" width="40" height="40"/> </a><strong>Bootswatch:</strong> Se utiliza Bootstrap theme Bootswatch como framework CSS para obtener una interfaz de usuario.
 
-<a href="https://sass-lang.com/install" target="_blank" rel="noreferrer"> <img src="https://e7.pngegg.com/pngimages/72/936/png-clipart-sass-cascading-style-sheets-preprocessor-less-postcss-meng-miscellaneous-text-thumbnail.png" alt="Bootswatch" width="40" height="40"/> </a><strong>Sass:</strong> Es un procesador CSS que nos permitio crear organización modular de los estilos.
+<a href="https://sass-lang.com/install" target="_blank" rel="noreferrer"> <img src="https://e7.pngegg.com/pngimages/72/936/png-clipart-sass-cascading-style-sheets-preprocessor-less-postcss-meng-miscellaneous-text-thumbnail.png" alt="Sass" width="40" height="40"/> </a><strong>Sass:</strong> Es un procesador CSS que nos permitio crear organización modular de los estilos.
 
 <a href="https://react-icons.github.io/react-icons/" target="_blank" rel="noreferrer"> <img src="https://camo.githubusercontent.com/48d099290b4cb2d7937bcd96e8497cf1845b54a810a6432c70cf944b60b40c77/68747470733a2f2f7261776769742e636f6d2f676f72616e67616a69632f72656163742d69636f6e732f6d61737465722f72656163742d69636f6e732e737667" alt="React icons" width="40" height="40"/> </a><strong>React Icons:</strong> Se utiliza librería que te permite añadir íconos (desde distintas librerías de íconos)
 
@@ -46,7 +48,10 @@
 ## 🛠 Skills
 REACT JS, HTML, CSS, SASS, BOOTSTRAP, FIREBASE...
 
-## Deployment
+## 🎨  UI Design en Figma 
+[Ver Mockups:](https://www.figma.com/proto/kS40KuXWLiabLktk7pKCTe/Untitled?page-id=0%3A1&node-id=2%3A4&viewport=143%2C102%2C0.23&scaling=min-zoom&starting-point-node-id=2%3A4)
+
+## ⚡ Deployment
 
 Para visualizar este proyecto hacer click en la siguiente url 👇
 
@@ -54,10 +59,15 @@ Para visualizar este proyecto hacer click en la siguiente url 👇
   npm run deploy
 ```
 
+## Authors
 
+- [@garancibiacl](https://github.com/garancibiacl)
 
 ## 🔗 Links Dev Front
 [![portfolio](https://img.shields.io/badge/my_portfolio-801ae6?style=for-the-badge&logo=ko-fi&logoColor=white)](https://piensaentuweb.cl/)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gustavo-arancibia-53127a97/)
 
 
+## Screenshots
+
+![App Screenshot](https://piensaentuweb.cl/wp-content/uploads/2022/10/screencapture-home.png)
