@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { ItemList } from "../ItemList/ItemList";
 import drawData from "../../data/drawdata";
-import { JellyTriangle } from '@uiball/loaders'
+// import { JellyTriangle } from '@uiball/loaders'
 // import { useParams } from 'react-router-dom';
+import { ThreeCircles } from  'react-loader-spinner'
+// import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
 
 
@@ -68,12 +70,18 @@ export const Carrusel = () => {
             {/* Wrapper for carousel items */}
             <div className="carousel-inner">
               <div className="item carousel-item active "
-              disabled={isLoading}>{isLoading ? <JellyTriangle 
-                size={60}
-                speed={1.75} 
-                color="#8733FF"
-
-               />: <ItemList data={producto}  /> }
+              disabled={isLoading}>{isLoading ? <ThreeCircles
+                height="100"
+                width="100"
+                color="rgba(255, 255, 255, 0.1)"
+                wrapperStyle={{}}
+                wrapperClass=""
+                visible={true}
+                ariaLabel="three-circles-rotating"
+                outerCircleColor=""
+                innerCircleColor=""
+                middleCircleColor=""
+              />: <ItemList data={producto}  /> }
      
               </div>
               <div className="item carousel-item">

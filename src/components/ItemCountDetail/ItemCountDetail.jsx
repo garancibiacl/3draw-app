@@ -36,6 +36,7 @@ export const  ItemCountDetail = ({ stock, count, setCount, onAdd, min, sum, res 
     // }
   
     return (
+      
       <div class="input-group count__container-detail mt-3 mb-3">
         <div
           class="btn-group btn-group-sm count__container"
