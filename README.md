@@ -28,7 +28,9 @@
 - Desafio 11: Desafío: Item Collection✅
 
 # Librerías usadas
-- <a href="https://sweetalert2.github.io/" target="_blank" rel="noreferrer"> <img src="https://avatars.githubusercontent.com/u/35137722?s=200&v=4" alt="Swwwtalert2" width="40" height="40"/> </a> Sweet Alert 2: Una librería de JavaScript para mostrar alertas y diálogos de confirmación.
+<a href="https://sweetalert2.github.io/" target="_blank" rel="noreferrer"> <img src="https://avatars.githubusercontent.com/u/35137722?s=200&v=4" alt="Swwwtalert2" width="40" height="40"/> </a> Sweet Alert 2: Una librería de JavaScript para mostrar alertas y diálogos de confirmación.
+
+<a href="https://camo.githubusercontent.com/51da0973891f15de1404fe9e17951136a420dafec4f9bbfa883e6283623c9317/68747470733a2f2f626f6f747377617463682e636f6d2f5f6173736574732f696d672f6c6f676f2d6461726b2e737667" target="_blank" rel="noreferrer"> <img src="https://avatars.githubusercontent.com/u/35137722?s=200&v=4" alt="Swwwtalert2" width="40" height="40"/> </a> Bootswatch: Se utiliza framework CSS para obtener una interfaz de usuario.
 
 
 
