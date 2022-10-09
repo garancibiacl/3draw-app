@@ -28,10 +28,15 @@
 - Desafio 11: Desafío: Item Collection✅
 
 # Librerías usadas
-<a href="https://sweetalert2.github.io/" target="_blank" rel="noreferrer"> <img src="https://avatars.githubusercontent.com/u/35137722?s=200&v=4" alt="Swwwtalert2" width="40" height="40"/> </a> Sweet Alert 2: Una librería de JavaScript para mostrar alertas y diálogos de confirmación.
+<a href="https://sweetalert2.github.io/" target="_blank" rel="noreferrer"> <img src="https://avatars.githubusercontent.com/u/35137722?s=200&v=4" alt="Swwwtalert2" width="40" height="40"/> </a><strong>Sweet Alert 2:</strong> Una librería de JavaScript para mostrar alertas y diálogos de confirmación.
 
-<a href="https://bootswatch.com/quartz/" target="_blank" rel="noreferrer"> <img src="https://camo.githubusercontent.com/51da0973891f15de1404fe9e17951136a420dafec4f9bbfa883e6283623c9317/68747470733a2f2f626f6f747377617463682e636f6d2f5f6173736574732f696d672f6c6f676f2d6461726b2e737667" alt="Swwwtalert2" width="40" height="40"/> </a> Bootswatch: Se utiliza framework CSS para obtener una interfaz de usuario.
+<a href="https://bootswatch.com/quartz/" target="_blank" rel="noreferrer"> <img src="https://camo.githubusercontent.com/51da0973891f15de1404fe9e17951136a420dafec4f9bbfa883e6283623c9317/68747470733a2f2f626f6f747377617463682e636f6d2f5f6173736574732f696d672f6c6f676f2d6461726b2e737667" alt="Bootswatch" width="40" height="40"/> </a><strong>Bootswatch:</strong> Se utiliza framework CSS para obtener una interfaz de usuario.
 
+<a href="https://react-icons.github.io/react-icons/" target="_blank" rel="noreferrer"> <img src="https://camo.githubusercontent.com/48d099290b4cb2d7937bcd96e8497cf1845b54a810a6432c70cf944b60b40c77/68747470733a2f2f7261776769742e636f6d2f676f72616e67616a69632f72656163742d69636f6e732f6d61737465722f72656163742d69636f6e732e737667" alt="React icons" width="40" height="40"/> </a><strong>React Icons:</strong> Se utiliza librería que te permite añadir íconos (desde distintas librerías de íconos)
+
+<a href="https://react-icons.github.io/react-icons/" target="_blank" rel="noreferrer"> <img src="https://camo.githubusercontent.com/48d099290b4cb2d7937bcd96e8497cf1845b54a810a6432c70cf944b60b40c77/68747470733a2f2f7261776769742e636f6d2f676f72616e67616a69632f72656163742d69636f6e732f6d61737465722f72656163742d69636f6e732e737667" alt="React icons" width="40" height="40"/> </a><strong>Firebase:</strong> Cloud Storage, la cual nos permitio contar con una base de datos para que el usuario con un espacio de almacenamiento y compartir imágenes y los productos.
+
+<a href="https://react-icons.github.io/react-icons/" target="_blank" rel="noreferrer"> <img src="https://camo.githubusercontent.com/48d099290b4cb2d7937bcd96e8497cf1845b54a810a6432c70cf944b60b40c77/68747470733a2f2f7261776769742e636f6d2f676f72616e67616a69632f72656163742d69636f6e732f6d61737465722f72656163742d69636f6e732e737667" alt="React icons" width="40" height="40"/> </a><strong>Loaders:</strong> Cloud Storage, la cual nos permitio contar con una base de datos para que el usuario con un espacio de almacenamiento y compartir imágenes y los productos.
 
 
 
