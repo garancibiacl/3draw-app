@@ -1,6 +1,6 @@
 
 
-![Logo](https://piensaentuweb.cl/wp-content/uploads/2022/10/logo.png)
+![Logo](https://piensaentuweb.cl/wp-content/uploads/2022/10/logo-v1.png)
 
 &#128425; Curso React Js - CODERHOUSE
 
