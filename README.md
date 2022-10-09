@@ -36,8 +36,23 @@
 
 <a href="https://react-icons.github.io/react-icons/" target="_blank" rel="noreferrer"> <img src="https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-512.png" alt="Fire base" width="40" height="40"/> </a><strong>Firebase:</strong> Cloud Storage, la cual nos permitio contar con una base de datos para que el usuario con un espacio de almacenamiento y compartir imágenes y los productos.
 
-<a href="https://mhnpd.github.io/react-loader-spinner/" target="_blank" rel="noreferrer"> <img src="https://mhnpd.github.io/react-loader-spinner/img/logo.svg" alt="React spinners" width="40" height="40"/> </a><strong>React Spinners</strong> Cloud Storage, la cual nos permitio contar con una base de datos para que el usuario con un espacio de almacenamiento y compartir imágenes y los productos.
+<a href="https://mhnpd.github.io/react-loader-spinner/" target="_blank" rel="noreferrer"> <img src="https://mhnpd.github.io/react-loader-spinner/img/logo.svg" alt="React spinners" width="40" height="40"/> </a><strong>React Spinners:</strong> Es un paquete npm que proporciona un componente giratorio para la carga de la vistas.
+
+## 🛠 Skills
+REACT JS, HTML, CSS, SASS, BOOTSTRAP, FIREBASE...
+
+## Deployment
+
+Para visualizar este proyecto hacer click en la siguiente url 👇
+
+```bash
+  npm run deploy
+```
 
 
+
+## 🔗 Links Dev Front
+[![portfolio](https://img.shields.io/badge/my_portfolio-801ae6?style=for-the-badge&logo=ko-fi&logoColor=white)](piensaentuweb.cl)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gustavo-arancibia-53127a97/)
 
 
