@@ -5,10 +5,10 @@
 
 &#128425; Curso React Js - CODERHOUSE
 
-🥤 # Objetivo del Curso
+ # 🥤 Objetivo del Curso
 - Desarrollar el Front End de una tienda online con carrito de compras, utilizando los componentes de React y Firebase como servidor en la nube.
 
-🗒️ # Descripción del Proyecto
+ # 🗒️ Descripción del Proyecto
 3Draw es un concepto que viene de (3D) de tercera diminensión y (Draw) de dibujo en ingles. Esta idea surgio porque me llama mucho la atención lo que es impresión 3D, objetos que se pueden utilizar en el uso diario, domestico, entretenimiento, medicina, ciencia, etc. Otro dato curioso que me encanta mucho la animación 3D, modificar elementos con Javascript y ver sus transformaciones. Es fascinante ver una web llena de vida. Desde este concepto se penso en una app 3Draw E-commerce Store de productos de Impresiones realmente útilies en 3D. 
 
 # ✅ Desafíos:
@@ -83,9 +83,9 @@ Para visualizar este proyecto hacer click en la siguiente url 👇
 Este curso se hizo gracias a la ayuda y colaboración del Profesor y Tutor que me guiaron en el proceso de cada desafio 💪
 
 Quiero agradecer a:
-La comunidad [CoderHouse](https://www.coderhouse.cl/) en especial a: Pofesor Francisco Pugh y Yutor Ezequiel Ramire por a tremenda labor que es educar.
+La comunidad [CoderHouse](https://www.coderhouse.cl/) en especial a: Pofesor Francisco Pugh y Yutor Ezequiel Ramirez por a tremenda labor que es educar.
 
 
 ## ❓Dudas
 
-Si tienes dudas sobre el Proyecto, escríbeme a <a href="mailto:garancibiacl@gmail.com]">garancibiacl@gmail.com]</a> [garancibiacl@gmail.com]
+Si tienes dudas sobre el Proyecto, escríbeme a <a href="mailto:garancibiacl@gmail.com]">garancibiacl@gmail.com</a> 
