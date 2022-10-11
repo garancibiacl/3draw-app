@@ -7,6 +7,7 @@ import { SectionPrototype } from '../SectionPrototype/SectionPrototype'
 export const Home = () => {
   return (
     <> 
+
    <Header/>
    <SectionService/>
    <SectionProduct/>

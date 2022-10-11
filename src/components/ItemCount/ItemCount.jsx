@@ -2,8 +2,7 @@ import { React, useState } from "react";
 import { BiMinus } from "react-icons/bi";
 import { BiPlus } from "react-icons/bi";
 import { MdAddShoppingCart } from "react-icons/md";
-// import {AddCart} from '../AddCart/AddCart';
-// import { useCounter } from '../Hooks/useCounter'
+
 //TODO
 export const ItemCount = ({ stock, count, setCount, onAdd, min, sum, res }) => {
   // const [count, setCount] = useState(min);

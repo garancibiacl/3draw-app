@@ -9,7 +9,9 @@ export const ItemDetail = ({ producto}) => {
 
   const { addToCart } = useCartContext();
 
+
   const [show, setshow] = useState(true)
+
 
   const Swal = require("sweetalert2");
   const onAdd = (count) => {
@@ -24,6 +26,7 @@ export const ItemDetail = ({ producto}) => {
       
 
       };
+
 
 
   return (
@@ -46,8 +49,8 @@ export const ItemDetail = ({ producto}) => {
             <div className="card mb-3 p-5" style={{ maxWidth: "50rem" }}>
               <img
                 className="rounded mx-auto d-block"
-                src={`${producto.image}`}
-                alt={producto.name}
+                src={producto.imagen}
+                alt={producto.nombre}
               />
             </div>
           </div>
@@ -56,7 +59,7 @@ export const ItemDetail = ({ producto}) => {
               <div className="card-body">
                 <div className="d-flex justify-content-between">
                   <div className="row">
-                       <p className="text-black-50"> Categoría: {producto.category}</p>
+                       <p className="text-black-50"> Categoría:{producto.category}</p>
                   <h4 className="card-title">{producto.nombre}</h4>
                   </div>
                   <ButtonLike />
@@ -83,7 +86,7 @@ export const ItemDetail = ({ producto}) => {
                 <p className="card-text pt-1 pb-1">{producto.description}</p>
                 <p className="item-price">
                   <strike className="text-black-50">
-                    ${producto.precioVenta}{" "}
+                    ${producto.precioVenta}
                   </strike>
                   <b>${producto.precioOferta}</b>
                 </p>

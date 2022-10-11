@@ -19,7 +19,6 @@ function Cart() {
             {cartList.map((producto) => (
               <ItemCart id={producto.id} key={producto.id} item={producto} />
             ))}
-
             <div className="row mb-3">
               <h3 className="text-end mb-4">Total compra: {totalFinal()}</h3>
               {/* <button className="btn" onClick={() => clear()}> limpiar carrito</button>  */}
@@ -40,11 +39,11 @@ function Cart() {
               <div className="col-6 d-flex justify-content-end">
                 <Link
                   type="button"
-                  to="/cart"
+                  to="/checkout"
                   className="btn btn-secondary btn-primary-mb rounded-pill"
                   data-bs-toggle="tooltip"
                   data-bs-placement="bottom"
-                  href="/"
+           
                 >
                   Checkout <BiRightArrowAlt size={25} />
                 </Link>

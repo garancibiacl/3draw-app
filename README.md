@@ -1,10 +1,12 @@
 
-<center>
+
 ![Logo](https://piensaentuweb.cl/wp-content/uploads/2022/10/logo-v1.png)
 
-</center>
 
 &#128425; Curso React Js - CODERHOUSE
+
+# Objetivo del Curso
+- Desarrollar el Front End de una tienda online con carrito de compras, utilizando los componentes de React y Firebase como servidor en la nube.
 
 # Descripción del Proyecto
 3Draw es un concepto que viene de (3D) de tercera diminensión y (Draw) de dibujo en ingles. Esta idea surgio porque me llama mucho la atención lo que es impresión 3D, objetos que se pueden utilizar en el uso diario, domestico, entretenimiento, medicina, ciencia, etc. Otro dato curioso que me encanta mucho la animación 3D, modificar elementos con Javascript y ver sus transformaciones. Es fascinante ver una web llena de vida. Desde este concepto se penso en una app 3Draw E-commerce Store de productos de Impresiones realmente útilies en 3D. 
@@ -35,7 +37,7 @@
 # Librerías usadas
 <a href="https://sweetalert2.github.io/" target="_blank" rel="noreferrer"> <img src="https://avatars.githubusercontent.com/u/35137722?s=200&v=4" alt="Swwwtalert2" width="40" height="40"/> </a><strong>Sweet Alert 2:</strong> Una librería de JavaScript para mostrar alertas y diálogos de confirmación.
 
-<a href="https://bootswatch.com/quartz/" target="_blank" rel="noreferrer"> <img src="https://camo.githubusercontent.com/51da0973891f15de1404fe9e17951136a420dafec4f9bbfa883e6283623c9317/68747470733a2f2f626f6f747377617463682e636f6d2f5f6173736574732f696d672f6c6f676f2d6461726b2e737667" alt="Bootswatch" width="40" height="40"/> </a><strong>Bootswatch:</strong> Se utiliza Bootstrap theme Bootswatch como framework CSS para obtener una interfaz de usuario.
+<a href="https://bootswatch.com/quartz/" target="_blank" rel="noreferrer"> <img src="https://camo.githubusercontent.com/51da0973891f15de1404fe9e17951136a420dafec4f9bbfa883e6283623c9317/68747470733a2f2f626f6f747377617463682e636f6d2f5f6173736574732f696d672f6c6f676f2d6461726b2e737667" alt="Bootswatch" width="40" height="40"/> </a><strong>Bootswatch:</strong> Se utiliza Bootstrap theme Quartz como framework CSS para obtener una interfaz de usuario.
 
 <a href="https://sass-lang.com/install" target="_blank" rel="noreferrer"> <img src="https://e7.pngegg.com/pngimages/72/936/png-clipart-sass-cascading-style-sheets-preprocessor-less-postcss-meng-miscellaneous-text-thumbnail.png" alt="Sass" width="40" height="40"/> </a><strong>Sass:</strong> Es un procesador CSS que nos permitio crear organización modular de los estilos.
 
@@ -46,9 +48,13 @@
 <a href="https://mhnpd.github.io/react-loader-spinner/" target="_blank" rel="noreferrer"> <img src="https://mhnpd.github.io/react-loader-spinner/img/logo.svg" alt="React spinners" width="40" height="40"/> </a><strong>React Spinners:</strong> Es un paquete npm que proporciona un componente giratorio para la carga de la vistas.
 
 ## 🛠 Skills
-REACT JS, HTML, CSS, SASS, BOOTSTRAP, FIREBASE...
+- ReactJS
+- Html5
+- Css, Grid, flex-box, transition, Medias Query, Metodología BEM
+- SCSS/SASS
+- Bootstrap
 
-## 🎨  UI Design en Figma 
+## 🎨  UI Design en Figma 1era Versión 
 [Ver Mockups:](https://www.figma.com/proto/kS40KuXWLiabLktk7pKCTe/Untitled?page-id=0%3A1&node-id=2%3A4&viewport=143%2C102%2C0.23&scaling=min-zoom&starting-point-node-id=2%3A4)
 
 ## ⚡ Deployment
@@ -64,10 +70,10 @@ Para visualizar este proyecto hacer click en la siguiente url 👇
 - [@garancibiacl](https://github.com/garancibiacl)
 
 ## 🔗 Links Dev Front
-[![portfolio](https://img.shields.io/badge/my_portfolio-801ae6?style=for-the-badge&logo=ko-fi&logoColor=white)](https://piensaentuweb.cl/)
+[![portfolio](https://img.shields.io/badge/mi_portfolio-801ae6?style=for-the-badge&logo=ko-fi&logoColor=white)](https://piensaentuweb.cl/)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gustavo-arancibia-53127a97/)
 
 
-## Screenshots
+## Screenshots Home
 
 ![App Screenshot](https://piensaentuweb.cl/wp-content/uploads/2022/10/screencapture-home.png)

@@ -38,18 +38,18 @@ Suscríbete a <strong>nuestro boletín</strong>
       </section>
       <div className="row  pt-4 border-top">
         <div className="col-md-6 text-start">
-        <p className="copyright">Hecho con ❤️ &nbsp;de Gustavo © <a  className='url-web__copyright' href="https://piensaentuweb.cl/">Piensa en tu Web</a>
+        <p className="copyright">Hecho con ❤️ &nbsp;de Gustavo © <a  className='url-web__copyright' href="https://piensaentuweb.cl/" target="_blank" rel="noopener noreferrer">Piensa en tu Web</a>
           </p>
         </div>
         <div className="col-md-6 text-end">
          
-        <a href="https://www.linkedin.com/in/gustavo-arancibia-53127a97/"  className="me-4 btn-secondary">
+        <a href="https://www.linkedin.com/in/gustavo-arancibia-53127a97/"  className="me-4 btn-secondary" target="_blank" rel="noopener noreferrer">
         <AiFillLinkedin size={25} />
         </a>
-        <a href="https://github.com/garancibiacl"  className="me-4 btn-secondary">
+        <a href="https://github.com/garancibiacl/"  className="me-4 btn-secondary" target="_blank" rel="noopener noreferrer">
         <AiOutlineGithub size={25} />
         </a>
-        <a href="https://github.com/garancibiacl"  className="btn-secondary">
+        <a href="https://www.instagram.com/guustavus/"  className="btn-secondary" target="_blank" rel="noopener noreferrer">
         <AiFillInstagram size={25} />
         </a>
         </div>

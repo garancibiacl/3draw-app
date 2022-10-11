@@ -8,6 +8,9 @@ import { Footer } from "./components/Footer/Footer";
 // import { Carrusel } from './components/Carrusel/Carrusel';
 import { CartContextProvider } from "./components/CartContext/CartContext";
 import { Soporte } from "./components/Soporte/Soporte";
+import { PageError } from "./components/PageError/PageError";
+import { Checkout } from "./components/Checkout/Checkout";
+
 
 import  ScrollTop from "./components/ScrollTop/ScrollTop";
 export const App = () => {
@@ -22,8 +25,9 @@ export const App = () => {
             <Route path="/categoria/:categoria" element={<Soporte />} />
             <Route path="/detalles/:id" element={<ItemDetailContainer />} />
             <Route path="/cart" element={<CartContainer />}></Route>
-            <Route path="*" element={<h1>Error 404</h1>}></Route>
-  
+            <Route path="*" element={<PageError/>}></Route>
+            <Route path="/checkout" element={<Checkout/>}></Route>
+
           </Routes>
  
         </div>

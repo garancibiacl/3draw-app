@@ -1,33 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { ItemList } from "../ItemList/ItemList";
 import drawData from "../../data/drawdata";
-// import { JellyTriangle } from '@uiball/loaders'
-// import { useParams } from 'react-router-dom';
-import { ThreeCircles } from  'react-loader-spinner'
-// import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
-
-
+import { ThreeCircles } from "react-loader-spinner";
 
 export const Carrusel = () => {
   const [producto, setProducto] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
-
   useEffect(() => {
     const getProductos = new Promise((resolve, reject) => {
       setTimeout(() => {
         resolve(drawData);
-        /* reject('HOLA'); */
       }, 2000);
     });
-
-    // CREAR EL FILTER 
-    // const getProductos = new Promise((resolve, reject) => {
-    //   setTimeout(() => {
-    //     resolve(drawData.filter(producto => producto.category === categoria));
-    //     /* reject('HOLA'); */
-    //   }, 2000);
-    // });
 
     getProductos
       .then((response) => setProducto(response))
@@ -35,7 +20,7 @@ export const Carrusel = () => {
       .finally(() => setIsLoading(false));
   }, []);
 
-  return   (
+  return (
     <div className="container-xl">
       <div className="row">
         <div className="col-md-12">
@@ -69,20 +54,23 @@ export const Carrusel = () => {
             </div>
             {/* Wrapper for carousel items */}
             <div className="carousel-inner">
-              <div className="item carousel-item active "
-              disabled={isLoading}>{isLoading ? <ThreeCircles
-                height="100"
-                width="100"
-                color="rgba(255, 255, 255, 0.1)"
-                wrapperStyle={{}}
-                wrapperClass=""
-                visible={true}
-                ariaLabel="three-circles-rotating"
-                outerCircleColor=""
-                innerCircleColor=""
-                middleCircleColor=""
-              />: <ItemList data={producto}  /> }
-     
+              <div className="item carousel-item active " disabled={isLoading}>
+                {isLoading ? (
+                  <ThreeCircles
+                    height="100"
+                    width="100"
+                    color="rgba(255, 255, 255, 0.1)"
+                    wrapperStyle={{}}
+                    wrapperClass=""
+                    visible={true}
+                    ariaLabel="three-circles-rotating"
+                    outerCircleColor=""
+                    innerCircleColor=""
+                    middleCircleColor=""
+                  />
+                ) : (
+                  <ItemList data={producto} />
+                )}
               </div>
               <div className="item carousel-item">
                 <ItemList data={producto} />

@@ -1,3 +1,3 @@
-import {cargarBaseDeDatos} from './firebase.js'
+// import {cargarBaseDeDatos} from './firebase.js'
 
-cargarBaseDeDatos()
+// cargarBaseDeDatos()
