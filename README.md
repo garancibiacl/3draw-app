@@ -83,7 +83,7 @@ Para visualizar este proyecto hacer click en la siguiente url 👇
 Este curso se hizo gracias a la ayuda y colaboración del Profesor y Tutor que me guiaron en el proceso de cada desafio 💪
 
 Quiero agradecer a:
-La comunidad [CoderHouse](https://www.coderhouse.cl/) en especial a: Pofesor Francisco Pugh y Yutor Ezequiel Ramirez por a tremenda labor que es educar.
+La comunidad [CoderHouse](https://www.coderhouse.cl/) en especial al: Pofesor Francisco Pugh y el Tutor Ezequiel Ramirez por a tremenda labor, que es educar.
 
 
 ## ❓Dudas
