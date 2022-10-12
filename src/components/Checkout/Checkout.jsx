@@ -243,7 +243,7 @@ Información de Pago
       </div>
                   </form>
                 </div>
-                <div className="checkout-sidebar-price-table mt-30">
+                {/* <div className="checkout-sidebar-price-table mt-30">
                   <h5 className="title">Pricing Table</h5>
                   <div className="sub-total-price" >
                     <div className="total-price" key={item.id}>
@@ -266,7 +266,7 @@ Información de Pago
                     </div>
                   </div>
                   <div className="price-table-btn button">
-                    <a href="javascript:void(0)" className="btn btn-alt">
+                    <a href="/" className="btn btn-alt">
                       Checkout
                     </a>
                   </div>
@@ -275,7 +275,7 @@ Información de Pago
                   <a href="product-grids.html">
                     <img src="assets/images/banner/banner.jpg" alt="#" />
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

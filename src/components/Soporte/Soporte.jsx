@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { ItemList } from "../ItemList/ItemList";
 import drawData from "../../data/drawdata";
-import { JellyTriangle } from '@uiball/loaders'
 import { useParams } from 'react-router-dom';
-
+import { Dna } from  'react-loader-spinner'
 
 
 export const Soporte = () => {
@@ -39,12 +38,14 @@ export const Soporte = () => {
             {/* Wrapper for carousel items */}
             <div className="carousel-inner">
               <div className="item "
-              disabled={isLoading}>{isLoading ? <JellyTriangle 
-                size={60}
-                speed={1.75} 
-                color="#8733FF"
-
-               />: <ItemList data={producto}  /> }
+              disabled={isLoading}>{isLoading ? <Dna
+                visible={true}
+                height="80"
+                width="80"
+                ariaLabel="dna-loading"
+                wrapperStyle={{}}
+                wrapperClass="dna-wrapper"
+              />: <ItemList data={producto}  /> }
      
               </div>
               <div className="item carousel-item">
