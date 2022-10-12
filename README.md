@@ -57,13 +57,9 @@
 ## 🎨  UI Design en Figma 1era Versión 
 [Ver Mockups:](https://www.figma.com/proto/kS40KuXWLiabLktk7pKCTe/Untitled?page-id=0%3A1&node-id=2%3A4&viewport=143%2C102%2C0.23&scaling=min-zoom&starting-point-node-id=2%3A4)
 
-## ⚡ Deployment
+## ⚡ Deployment 3Draw
 
-Para visualizar este proyecto hacer click en la siguiente url 👇
-
-```bash
-  npm run deploy
-```
+Para visualizar el proyecto debe hacer click [Aquí](https://github.com/garancibiacl)
 
 ## 🧑‍💻 Authors
 
@@ -83,7 +79,7 @@ Para visualizar este proyecto hacer click en la siguiente url 👇
 Este curso se hizo gracias a la ayuda y colaboración del Profesor y Tutor que me guiaron en el proceso de cada desafio 💪
 
 Quiero agradecer a:
-La comunidad [CoderHouse](https://www.coderhouse.cl/) en especial al: Pofesor Francisco Pugh y el Tutor Ezequiel Ramirez por a tremenda labor, que es educar.
+La comunidad [CoderHouse](https://www.coderhouse.cl/) en especial al: Pofesor Francisco Pugh y el Tutor Ezequiel Ramirez por la tremenda labor, que es educar.
 
 
 ## ❓Dudas
