@@ -57,34 +57,9 @@
 ## 🎨  UI Design en Figma 1era Versión 
 [Ver Mockups:](https://www.figma.com/proto/kS40KuXWLiabLktk7pKCTe/Untitled?page-id=0%3A1&node-id=2%3A4&viewport=143%2C102%2C0.23&scaling=min-zoom&starting-point-node-id=2%3A4)
 
-## ⚡ Run Locally
+## ⚡ Deploy
 
-Clone the project
-
-```bash
-  git clone https://github.com/garancibiacl/3draw-app.git
-```
-
-Go to the project directory
-
-```bash
-  cd my-project
-```
-
-Install dependencies
-
-```bash
-  npm install
-```
-
-Start the server
-
-```bash
-  npm run start
-```
-
-
-Para visualizar el proyecto debe hacer click [Aquí](https://github.com/garancibiacl)
+Para visualizar el proyecto debe hacer click [Aquí](https://3draw-app.vercel.app/)
 
 ## 🧑‍💻 Authors
 
