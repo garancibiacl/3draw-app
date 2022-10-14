@@ -72,7 +72,7 @@ Para visualizar el proyecto debe hacer click [Aquí](https://3draw-app.vercel.ap
 
 ## 📷 Screenshots Home
 
-![App Screenshot](https://piensaentuweb.cl/wp-content/uploads/2022/10/screencapture-home.png)
+![App Screenshot](https://piensaentuweb.cl/wp-content/uploads/2022/10/sreen-3draw.png)
 
 
 ## 🤗 Agradecimientos
