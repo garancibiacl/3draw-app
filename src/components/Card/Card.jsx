@@ -6,27 +6,30 @@ import { ButtonLike } from "../ButtonLike/ButtonLike";
 import { Link } from 'react-router-dom';
 import  { useCartContext }  from "../CartContext/CartContext";
 
+// import { Link } from 'react-router-dom'
 
 
-const Card = ({ producto}) => {
+const Card = ({ producto, reset }) => {
   const [count, setCount] = useState(1);
 
   const { addToCart } = useCartContext();
 
-  const {id} = producto
-
-  const Swal = require("sweetalert2");
 
   const onAdd = (count) => {
       producto.stock = producto.stock - count;
       addToCart(producto, count);
-      Swal.fire({
-        title: "Felicidades!",
-        text: `Se han agregado ${count} productos`,
-        icon: "success",
-      });
   };
 
+  const {id} = producto
+  // const Swal = require("sweetalert2");
+  // function onAdd(count) {
+  //   Swal.fire({
+  //     title: "Felicidades!",
+  //     text: `Se han agregado ${count} productos`,
+  //     icon: "success",
+  //   });
+  //   setCount(1);
+  // }
 
 
   return (

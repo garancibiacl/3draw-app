@@ -9,23 +9,23 @@ export const ItemDetail = ({ producto}) => {
 
   const { addToCart } = useCartContext();
 
-
   const [show, setshow] = useState(true)
 
-
-  const Swal = require("sweetalert2");
   const onAdd = (count) => {
       setshow(false);
       producto.stock = producto.stock - count;
       addToCart(producto, count);
-      Swal.fire({
-        title: "Felicidades!",
-        text: `Se han agregado ${count} productos`,
-        icon: "success",
-      });
-      
+  };
 
-      };
+  // const Swal = require("sweetalert2");
+  // function onAdd(count) {
+  //   Swal.fire({
+  //     title: "Felicidades!",
+  //     text: `Se han agregado ${count} productos`,
+  //     icon: "success",
+  //   });
+  //   setCount(1);
+  // }
 
 
 
@@ -49,8 +49,8 @@ export const ItemDetail = ({ producto}) => {
             <div className="card mb-3 p-5" style={{ maxWidth: "50rem" }}>
               <img
                 className="rounded mx-auto d-block"
-                src={producto.imagen}
-                alt={producto.nombre}
+                src={`${producto.image}`}
+                alt={producto.name}
               />
             </div>
           </div>
@@ -58,10 +58,7 @@ export const ItemDetail = ({ producto}) => {
             <div className="card bg-light mb-3" style={{ maxWidth: "50rem" }}>
               <div className="card-body">
                 <div className="d-flex justify-content-between">
-                  <div className="row">
-                       <p className="text-black-50"> Categoría:{producto.category}</p>
                   <h4 className="card-title">{producto.nombre}</h4>
-                  </div>
                   <ButtonLike />
                 </div>
                 <div className="star-rating">
@@ -86,28 +83,29 @@ export const ItemDetail = ({ producto}) => {
                 <p className="card-text pt-1 pb-1">{producto.description}</p>
                 <p className="item-price">
                   <strike className="text-black-50">
-                    ${producto.precioVenta}
+                    ${producto.precioVenta}{" "}
                   </strike>
                   <b>${producto.precioOferta}</b>
                 </p>
                 <p className="item-stock"> {producto.stock} Disponibles</p>
                 {show ?
                 <ItemCountDetail
-                stock={producto.stock}
-                onAdd={onAdd}
-                count={count}
-                setCount={setCount}
-                min={1}
-                sum={1}
-                res={1}
+                  stock={producto.stock}
+                  onAdd={onAdd}
+                  count={count}
+                  setCount={setCount}
+                  min={1}
+                  sum={1}
+                  res={1}
                 />
                 :
-                
                 <Link to="/cart"><button className='btn btn-primary btn-primary-mb rounded-pill' >Ver Carrito</button>
-                      <Link to="/"><button className='btn rounded-pill text-black mx-3 ' >Seguir Comprando</button></Link>
-                </Link>}
-         
-           
+                <Link to="/"><button className='btn rounded-pill text-black mx-3 ' >Seguir Comprando</button></Link>
+          </Link>
+                
+                
+                }
+                <p className="text-black-50"> Categoría: {producto.category}</p>
               </div>
             </div>
           </div>

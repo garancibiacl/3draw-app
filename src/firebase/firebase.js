@@ -25,7 +25,7 @@ async function cargarBaseDeDatos  () {
             cantidad: producto.stock,
             precioVenta: producto.precioVenta,
             precioOferta: producto.precioOferta,
-            imagen: producto.image
+            imagen: producto.imagen
           });
     })
     

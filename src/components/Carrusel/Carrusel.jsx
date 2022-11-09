@@ -72,12 +72,7 @@ export const Carrusel = () => {
                   <ItemList data={producto} />
                 )}
               </div>
-              <div className="item carousel-item">
-                <ItemList data={producto} />
-              </div>
-              <div className="item carousel-item">
-                <ItemList data={producto} />
-              </div>
+             
             </div>
 
             {/* Carousel controls */}
