@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { ItemList } from "../ItemList/ItemList";
 import drawData from "../../data/drawdata";
-import { ThreeCircles } from "react-loader-spinner";
+import { Dna } from  'react-loader-spinner'
 
 export const Carrusel = () => {
   const [producto, setProducto] = useState([]);
@@ -11,7 +11,7 @@ export const Carrusel = () => {
     const getProductos = new Promise((resolve, reject) => {
       setTimeout(() => {
         resolve(drawData);
-      }, 2000);
+      }, 4000);
     });
 
     getProductos
@@ -54,21 +54,17 @@ export const Carrusel = () => {
             </div>
             {/* Wrapper for carousel items */}
             <div className="carousel-inner">
-              <div className="item carousel-item active " disabled={isLoading}>
-                {isLoading ? (
-                  <ThreeCircles
-                    height="100"
-                    width="100"
-                    color="rgba(255, 255, 255, 0.1)"
-                    wrapperStyle={{}}
-                    wrapperClass=""
-                    visible={true}
-                    ariaLabel="three-circles-rotating"
-                    outerCircleColor=""
-                    innerCircleColor=""
-                    middleCircleColor=""
-                  />
-                ) : (
+              <div className="item carousel-item active " 
+              disabled={isLoading}>{isLoading ? <Dna
+  visible={true}
+  height="80"
+  width="80"
+  paddingTop="70"
+  ariaLabel="dna-loading"
+  wrapperStyle={{margin:"15rem"}}
+
+
+  wrapperClass="dna-wrapper"/> : (
                   <ItemList data={producto} />
                 )}
               </div>
